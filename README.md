@@ -23,16 +23,24 @@ A modern, responsive personal portfolio and CV website for a **Senior PHP & Back
 
 ```
 portfolio/
-├── index.html                   # English version (Default root)
+├── index.html                                        # English version (Default root)
 ├── ua/
-│   └── index.html               # Ukrainian version
+│   └── index.html                                    # Ukrainian version
 ├── ru/
-│   └── index.html               # Russian version
+│   └── index.html                                    # Russian version
 ├── css/
-│   └── style.css                # Shared modern stylesheet (Tokens, responsive, print CV)
+│   └── style.css                                     # Shared modern stylesheet
+├── templates/                                        # HTML templates for CV print/PDF
+│   ├── cv_en.html
+│   ├── cv_ru.html
+│   └── cv_ua.html
+├── scripts/
+│   └── generate_cv_pdfs.py                           # Chrome headless PDF generator
 └── assets/
-    ├── README.md                # Asset instructions
-    └── Alex_Kash_Backend_Developer_CV.pdf  # Sample CV PDF document
+    ├── img/                                          # Company logos
+    ├── Oleksii_Kashtanov_PHP_Backend_Developer_CV_EN.pdf
+    ├── Oleksii_Kashtanov_PHP_Backend_Developer_CV_RU.pdf
+    └── Oleksii_Kashtanov_PHP_Backend_Developer_CV_UA.pdf
 ```
 
 ---

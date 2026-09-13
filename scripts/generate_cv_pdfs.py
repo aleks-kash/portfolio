@@ -57,12 +57,5 @@ def main():
     for html_path, pdf_path in targets:
         html_to_pdf(browser, html_path, pdf_path)
 
-    # Maintain backward compatibility for existing download link
-    shutil.copyfile(
-        "assets/Oleksii_Kashtanov_PHP_Backend_Developer_CV_EN.pdf",
-        "assets/Alex_Kash_Backend_Developer_CV.pdf"
-    )
-    print("Copied EN CV to assets/Alex_Kash_Backend_Developer_CV.pdf for backward compatibility.")
-
 if __name__ == "__main__":
     main()

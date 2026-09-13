@@ -1,6 +1,12 @@
 # Assets Directory
 
-Place your CV PDF file here with the filename:
-`Alex_Kash_Backend_Developer_CV.pdf`
+Localized single-page A4 CV PDFs:
+- `Oleksii_Kashtanov_PHP_Backend_Developer_CV_EN.pdf` (English)
+- `Oleksii_Kashtanov_PHP_Backend_Developer_CV_RU.pdf` (Russian)
+- `Oleksii_Kashtanov_PHP_Backend_Developer_CV_UA.pdf` (Ukrainian)
 
-(Or update the filename in `index.html`, `ua/index.html`, and `ru/index.html` to match your actual CV document).
+To regenerate these files from templates, run:
+```bash
+python scripts/generate_cv_pdfs.py
+```
+
