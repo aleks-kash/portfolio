@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Олексій Каштанов - Senior PHP Backend Developer CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 8mm 10mm;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 8.6pt;
+      line-height: 1.38;
+      color: #334155;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .cv-container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    /* Header */
+    .header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 7px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .header-main {
+      flex: 1;
+    }
+    .name {
+      font-size: 20pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+    .title {
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: #0284c7;
+      margin-bottom: 4px;
+    }
+    .summary-text {
+      font-size: 8.2pt;
+      color: #475569;
+      line-height: 1.38;
+      max-width: 580px;
+    }
+    .contacts-panel {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+      font-size: 8pt;
+      color: #475569;
+      white-space: nowrap;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 5px;
+      text-decoration: none;
+      color: #334155;
+    }
+    .contact-item strong {
+      color: #0f172a;
+    }
+    .contact-item svg {
+      width: 11px;
+      height: 11px;
+      fill: #0284c7;
+      flex-shrink: 0;
+    }
+
+    /* Section Headings */
+    .section-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-top: 7px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 3.5px;
+      height: 11px;
+      background: #0284c7;
+      border-radius: 2px;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4px 12px;
+      margin-bottom: 6px;
+    }
+    .skill-group {
+      font-size: 8.1pt;
+    }
+    .skill-group-title {
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 2px;
+      font-size: 8.1pt;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.2pt;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      padding: 1px 4px;
+      border-radius: 3px;
+      color: #0f172a;
+      font-weight: 500;
+    }
+    .tag.highlight {
+      background: #e0f2fe;
+      border-color: #bae6fd;
+      color: #0369a1;
+      font-weight: 600;
+    }
+
+    /* Experience */
+    .job-card {
+      margin-bottom: 6px;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+    .job-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .job-role {
+      font-size: 9.2pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .job-company {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #0284c7;
+    }
+    .job-type {
+      font-size: 7.8pt;
+      color: #64748b;
+    }
+    .job-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: #475569;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 1px 5px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .job-bullets {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 2px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5px;
+    }
+    .job-bullets li {
+      font-size: 8.1pt;
+      line-height: 1.34;
+      position: relative;
+      padding-left: 11px;
+      color: #334155;
+    }
+    .job-bullets li::before {
+      content: '•';
+      position: absolute;
+      left: 1px;
+      color: #0284c7;
+      font-weight: 700;
+    }
+    .job-bullets strong {
+      color: #0f172a;
+    }
+    .job-stack {
+      margin-top: 2px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+    .job-stack span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6.8pt;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 0 4px;
+      border-radius: 2px;
+    }
+
+    /* Projects Section - 2 Columns */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 10px;
+      margin-bottom: 5px;
+    }
+    .project-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 3px solid #0284c7;
+      padding: 5px 8px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-header {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      margin-bottom: 2px;
+    }
+    .project-name {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.25;
+    }
+    .project-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6.8pt;
+      font-weight: 600;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 0 4px;
+      border-radius: 2px;
+      display: inline-block;
+      align-self: flex-start;
+      margin-top: 1px;
+    }
+    .project-desc {
+      font-size: 7.9pt;
+      color: #475569;
+      line-height: 1.32;
+      margin-bottom: 3px;
+    }
+
+    /* Education */
+    .edu-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 8.2pt;
+      padding-top: 1px;
+    }
+    .edu-inst {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .edu-degree {
+      color: #475569;
+    }
+    .edu-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.6pt;
+      font-weight: 600;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cv-container">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-main">
+      <h1 class="name">Олексій Каштанов</h1>
+      <div class="title">Senior PHP / Backend Інженер &bull; Високонавантажені &amp; Розподілені Системи</div>
+      <p class="summary-text">
+        Senior Backend розробник із 6+ роками практичного досвіду в проєктуванні масштабованих SaaS-платформ, мікросервісів та оптимізації баз даних. Експерт у сучасному PHP (8+), профілюванні складних SQL-запитів та подійній архітектурі (RabbitMQ, Redis). Підтверджений досвід ліквідації проблем N+1, прискорення важких звітів у 26 разів та забезпечення безперебійної роботи систем 99.98%.
+      </p>
+    </div>
+    <div class="contacts-panel">
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <span>aleks.kash.php@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832.946z"/></svg>
+        <span>Telegram: <strong>@dev_unit</strong></span>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+        <span>linkedin.com/in/a-kashtanov</span>
+      </div>
+      <div class="contact-item">
+        <span>GitHub: <strong>aleks-kash</strong></span>
+      </div>
+      <div class="contact-item">
+        <span>Remote (Світ / CET / UTC+2) &bull; Англійська: <strong>B1</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Technical Competencies -->
+  <section>
+    <h2 class="section-title">Технічні компетенції</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-title">Мови та архітектура бекенду</div>
+        <div class="skill-tags">
+          <span class="tag highlight">PHP 8.2+</span>
+          <span class="tag">Java</span>
+          <span class="tag">SQL</span>
+          <span class="tag highlight">ООП / SOLID</span>
+          <span class="tag">Патерни</span>
+          <span class="tag">Clean Architecture / DDD</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Бази даних, профілювання та кеш</div>
+        <div class="skill-tags">
+          <span class="tag highlight">PostgreSQL</span>
+          <span class="tag highlight">MySQL</span>
+          <span class="tag highlight">Redis (Cache-aside)</span>
+          <span class="tag">Складені B-Tree індекси</span>
+          <span class="tag">EXPLAIN ANALYZE</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Фреймворки, тестування та якість</div>
+        <div class="skill-tags">
+          <span class="tag highlight">Symfony</span>
+          <span class="tag highlight">Laravel</span>
+          <span class="tag">Doctrine ORM</span>
+          <span class="tag">Eloquent</span>
+          <span class="tag highlight">PHPStan Level 8</span>
+          <span class="tag">PHPUnit</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Інтеграції, черги та DevOps</div>
+        <div class="skill-tags">
+          <span class="tag highlight">Мікросервіси</span>
+          <span class="tag highlight">RabbitMQ</span>
+          <span class="tag">REST API</span>
+          <span class="tag">OpenAPI / Swagger 3.0</span>
+          <span class="tag">Docker</span>
+          <span class="tag">CI/CD / GitHub Actions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section>
+    <h2 class="section-title">Досвід роботи</h2>
+
+    <!-- Role 1: Efumo SSC -->
+    <article class="job-card">
+      <div class="job-header">
+        <div class="job-title-row">
+          <span class="job-role">PHP Backend Developer</span>
+          <span class="job-company">&bull; Efumo SSC - Digital Transformation</span>
+          <span class="job-type">(Часткова зайнятість)</span>
+        </div>
+        <span class="job-date">Лип 2026 &mdash; Серп 2026 &middot; 2 міс</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Розробка та підтримка відмовостійких бекенд-компонентів на <strong>PHP</strong> у проєктах цифрової трансформації бізнесу (Digital Transformation).</li>
+        <li>Проєктування REST API сервісів, оптимізація міжсервісної взаємодії та обробка зовнішніх потоків даних.</li>
+      </ul>
+      <div class="job-stack">
+        <span>PHP</span><span>Backend Development</span><span>Digital Transformation</span><span>REST API</span><span>Git</span>
+      </div>
+    </article>
+
+    <!-- Role 2: WellnessLiving -->
+    <article class="job-card">
+      <div class="job-header">
+        <div class="job-title-row">
+          <span class="job-role">Senior PHP Backend Developer / Full Stack Engineer</span>
+          <span class="job-company">&bull; WellnessLiving</span>
+          <span class="job-type">(Повна зайнятість)</span>
+        </div>
+        <span class="job-date">Трав 2022 &mdash; Трав 2026 &middot; 4 роки 1 мес</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Проєктування та розробка масштабованих мікросервісів та підсистем глобальної SaaS-платформи на <strong>PHP</strong> та <strong>Java</strong>.</li>
+        <li>Спроєктував та впровадив подійно-орієнтований рушій автоматизації маркетингових тригерних кампаній (<strong>RabbitMQ</strong>, <strong>Redis</strong>, Webhooks) для утримання клієнтів, реактивації та омніканальних сповіщень.</li>
+        <li>Провів глибокий аудит та рефакторинг критичної 77-колонкової таблиці замовлень (усунення N+1, складені B-Tree індекси, нормалізація схеми), прискоривши генерацію звітів у <strong>26 разів (12 с &rarr; 450 мс)</strong>.</li>
+        <li>Ліквідував «помилку округлення в 1 цент» у білінгу, перевівши грошові поля з <code style="font-family:monospace;font-size:7.5pt;background:#e2e8f0;padding:0 2px;">DOUBLE</code> на <code style="font-family:monospace;font-size:7.5pt;background:#e2e8f0;padding:0 2px;">DECIMAL(12,2)</code> без втрати цілісності даних.</li>
+        <li>Забезпечував доступність сервісів 99.98%, проводив код-рев'ю та менторив колег у напрямках DDD та профілювання запитів до БД.</li>
+      </ul>
+      <div class="job-stack">
+        <span>Microservices</span><span>Java</span><span>PHP 8</span><span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>RabbitMQ</span><span>Docker</span><span>CI/CD</span>
+      </div>
+    </article>
+
+    <!-- Role 3: Absolutist -->
+    <article class="job-card">
+      <div class="job-header">
+        <div class="job-title-row">
+          <span class="job-role">Web &amp; Backend Developer / Full Stack Engineer</span>
+          <span class="job-company">&bull; Absolutist</span>
+        </div>
+        <span class="job-date">Трав 2020 &mdash; Квіт 2022 &middot; 2 роки</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Розробка серверної частини та веб-інфраструктури для ігрових проєктів компанії (<strong>Gamedev and Back-end Operations</strong>).</li>
+        <li>Проєктування високопродуктивних REST API для клієнтських ігрових додатків, синхронізації ігрового прогресу та профілів гравців.</li>
+        <li>Оптимізація реляційної СУБД (MySQL) та впровадження кешування в Redis для стабільної роботи при пікових ігрових навантаженнях.</li>
+      </ul>
+      <div class="job-stack">
+        <span>Gamedev</span><span>Back-end Operations</span><span>PHP</span><span>MySQL</span><span>Redis</span><span>REST API</span>
+      </div>
+    </article>
+
+    <!-- Role 4: Babenko eCommerce GmbH -->
+    <article class="job-card">
+      <div class="job-header">
+        <div class="job-title-row">
+          <span class="job-role">PHP Backend Developer / Magento Backend Developer</span>
+          <span class="job-company">&bull; Babenko eCommerce GmbH</span>
+        </div>
+        <span class="job-date">Трав 2019 &mdash; Квіт 2020 &middot; 1 рік</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Розробка модулів інтернет-магазинів та інтеграційних сервісів на базі <strong>Magento</strong> та <strong>PHP</strong>.</li>
+        <li>Інтеграція із зовнішніми платіжними шлюзами, службами доставки та складськими обліковими ERP/CRM системами.</li>
+        <li>Оптимізація продуктивності кошика, чекауту та каталогу продукції для європейських e-commerce клієнтів.</li>
+      </ul>
+      <div class="job-stack">
+        <span>Розробка ПЗ</span><span>PHP</span><span>Magento</span><span>MySQL</span><span>E-Commerce</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- Key Engineering Projects -->
+  <section>
+    <h2 class="section-title">Вибрані інженерні проєкти</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">Рушій автоматизації кампаній та тригерів</span>
+          <span class="project-badge">Event-Driven &bull; High Load</span>
+        </div>
+        <p class="project-desc">
+          Розробка рушія автоматизації бізнес-тригерів (дії користувачів, когортні переміщення). Декомпозиція через черги RabbitMQ та воркери Redis Streams усунула таймаути та забезпечила роботу ланцюжків утримання клієнтів, реактивацію покинутих кошиків та сповіщення.
+        </p>
+        <div class="job-stack">
+          <span>PHP 8</span><span>RabbitMQ</span><span>Redis</span><span>Webhooks</span><span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">Архітектурний рефакторинг БД замовлень</span>
+          <span class="project-badge">DB Optimization &bull; 26x Speedup</span>
+        </div>
+        <p class="project-desc">
+          Технічний аудит та рефакторинг перевантаженої таблиці замовлень (77 колонок, «Божественна таблиця»). Усунення N+1, додавання складених B-Tree індексів, ліквідація помилки округлення в 1 цент через DECIMAL(12,2), скорочення часу генерації звітів з 12 с до 450 мс.
+        </p>
+        <div class="job-stack">
+          <span>PostgreSQL</span><span>MySQL</span><span>PHP 8</span><span>EXPLAIN ANALYZE</span><span>Redis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2 class="section-title">Освіта</h2>
+    <div class="edu-card">
+      <div>
+        <span class="edu-inst">Національний Гірничий Університет</span>
+        <span class="edu-degree">&bull; Спеціаліст у галузі комп'ютерних наук, Інженер-програміст</span>
+      </div>
+      <div class="edu-date">2007 &mdash; 2012</div>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

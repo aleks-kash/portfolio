@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oleksii Kashtanov - Senior PHP Backend Developer CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 8mm 10mm;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 8.6pt;
+      line-height: 1.38;
+      color: #334155;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .cv-container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    /* Header */
+    .header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 7px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .header-main {
+      flex: 1;
+    }
+    .name {
+      font-size: 20pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+    .title {
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: #0284c7;
+      margin-bottom: 4px;
+    }
+    .summary-text {
+      font-size: 8.2pt;
+      color: #475569;
+      line-height: 1.38;
+      max-width: 580px;
+    }
+    .contacts-panel {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+      font-size: 8pt;
+      color: #475569;
+      white-space: nowrap;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 5px;
+      text-decoration: none;
+      color: #334155;
+    }
+    .contact-item strong {
+      color: #0f172a;
+    }
+    .contact-item svg {
+      width: 11px;
+      height: 11px;
+      fill: #0284c7;
+      flex-shrink: 0;
+    }
+
+    /* Section Headings */
+    .section-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-top: 7px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 3.5px;
+      height: 11px;
+      background: #0284c7;
+      border-radius: 2px;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4px 12px;
+      margin-bottom: 6px;
+    }
+    .skill-group {
+      font-size: 8.1pt;
+    }
+    .skill-group-title {
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 2px;
+      font-size: 8.1pt;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.2pt;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      padding: 1px 4px;
+      border-radius: 3px;
+      color: #0f172a;
+      font-weight: 500;
+    }
+    .tag.highlight {
+      background: #e0f2fe;
+      border-color: #bae6fd;
+      color: #0369a1;
+      font-weight: 600;
+    }
+
+    /* Experience */
+    .job-card {
+      margin-bottom: 6px;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+    .job-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .job-role {
+      font-size: 9.2pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .job-company {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #0284c7;
+    }
+    .job-type {
+      font-size: 7.8pt;
+      color: #64748b;
+    }
+    .job-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: #475569;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 1px 5px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .job-bullets {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 2px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5px;
+    }
+    .job-bullets li {
+      font-size: 8.1pt;
+      line-height: 1.34;
+      position: relative;
+      padding-left: 11px;
+      color: #334155;
+    }
+    .job-bullets li::before {
+      content: '•';
+      position: absolute;
+      left: 1px;
+      color: #0284c7;
+      font-weight: 700;
+    }
+    .job-bullets strong {
+      color: #0f172a;
+    }
+    .job-stack {
+      margin-top: 2px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+    .job-stack span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6.8pt;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 0 4px;
+      border-radius: 2px;
+    }
+
+    /* Projects Section - 2 Columns */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 10px;
+      margin-bottom: 5px;
+    }
+    .project-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 3px solid #0284c7;
+      padding: 5px 8px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-header {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      margin-bottom: 2px;
+    }
+    .project-name {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.25;
+    }
+    .project-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6.8pt;
+      font-weight: 600;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 0 4px;
+      border-radius: 2px;
+      display: inline-block;
+      align-self: flex-start;
+      margin-top: 1px;
+    }
+    .project-desc {
+      font-size: 7.9pt;
+      color: #475569;
+      line-height: 1.32;
+      margin-bottom: 3px;
+    }
+
+    /* Education */
+    .edu-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 8.2pt;
+      padding-top: 1px;
+    }
+    .edu-inst {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .edu-degree {
+      color: #475569;
+    }
+    .edu-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.6pt;
+      font-weight: 600;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cv-container">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-main">
+      <h1 class="name">Oleksii Kashtanov</h1>
+      <div class="title">Senior PHP / Backend Engineer &bull; High-Load &amp; Distributed Systems</div>
+      <p class="summary-text">
+        Senior Backend Engineer with 6+ years of specialized experience in designing and scaling high-concurrency SaaS platforms, microservices, and database architectures. Expert in PHP 8+, Symfony, Laravel, SQL query profiling, and event-driven architectures with RabbitMQ and Redis. Proven track record of eliminating N+1 bottlenecks, accelerating slow reports 26x, and maintaining 99.98% uptime.
+      </p>
+    </div>
+    <div class="contacts-panel">
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <span>aleks.kash.php@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832.946z"/></svg>
+        <span>Telegram: <strong>@dev_unit</strong></span>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+        <span>linkedin.com/in/a-kashtanov</span>
+      </div>
+      <div class="contact-item">
+        <span>GitHub: <strong>aleks-kash</strong></span>
+      </div>
+      <div class="contact-item">
+        <span>Remote (Worldwide / CET / UTC+2) &bull; English: <strong>B1</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Technical Competencies -->
+  <section>
+    <h2 class="section-title">Technical Competencies</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-title">Languages &amp; Core Architecture</div>
+        <div class="skill-tags">
+          <span class="tag highlight">PHP 8.2+</span>
+          <span class="tag">Java</span>
+          <span class="tag">SQL</span>
+          <span class="tag highlight">OOP / SOLID</span>
+          <span class="tag">Design Patterns</span>
+          <span class="tag">Clean Architecture / DDD</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Databases, Profiling &amp; Caching</div>
+        <div class="skill-tags">
+          <span class="tag highlight">PostgreSQL</span>
+          <span class="tag highlight">MySQL</span>
+          <span class="tag highlight">Redis (Cache-aside)</span>
+          <span class="tag">Composite B-Tree Indexes</span>
+          <span class="tag">EXPLAIN ANALYZE</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Frameworks, Testing &amp; Quality</div>
+        <div class="skill-tags">
+          <span class="tag highlight">Symfony</span>
+          <span class="tag highlight">Laravel</span>
+          <span class="tag">Doctrine ORM</span>
+          <span class="tag">Eloquent</span>
+          <span class="tag highlight">PHPStan Level 8</span>
+          <span class="tag">PHPUnit</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Architecture, Messaging &amp; DevOps</div>
+        <div class="skill-tags">
+          <span class="tag highlight">Microservices</span>
+          <span class="tag highlight">RabbitMQ</span>
+          <span class="tag">RESTful APIs</span>
+          <span class="tag">OpenAPI / Swagger 3.0</span>
+          <span class="tag">Docker</span>
+          <span class="tag">CI/CD / GitHub Actions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section>
+    <h2 class="section-title">Work Experience</h2>
+
+    <!-- Role 1: Efumo SSC -->
+    <article class="job-card">
+      <div class="job-header">
+        <div class="job-title-row">
+          <span class="job-role">PHP Backend Developer</span>
+          <span class="job-company">&bull; Efumo SSC - Digital Transformation</span>
+          <span class="job-type">(Part-time)</span>
+        </div>
+        <span class="job-date">Jul 2026 &mdash; Aug 2026 &middot; 2 mos</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Engineered resilient backend components and business automation scripts in <strong>PHP</strong> for enterprise digital transformation projects.</li>
+        <li>Designed REST API endpoints and optimized service communication protocols for high reliability and structured data processing.</li>
+      </ul>
+      <div class="job-stack">
+        <span>PHP</span><span>Backend Development</span><span>Digital Transformation</span><span>REST API</span><span>Git</span>
+      </div>
+    </article>
+
+    <!-- Role 2: WellnessLiving -->
+    <article class="job-card">
+      <div class="job-header">
+        <div class="job-title-row">
+          <span class="job-role">Senior PHP Backend Developer / Full Stack Engineer</span>
+          <span class="job-company">&bull; WellnessLiving</span>
+          <span class="job-type">(Full-time)</span>
+        </div>
+        <span class="job-date">May 2022 &mdash; May 2026 &middot; 4 yrs 1 mo</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Architected core subsystems and scalable microservices in <strong>PHP</strong> and <strong>Java</strong> for an enterprise SaaS platform serving thousands of businesses globally.</li>
+        <li>Designed and implemented an event-driven marketing campaign automation engine powered by <strong>RabbitMQ</strong>, <strong>Redis</strong>, and asynchronous webhook workers for multi-channel trigger workflows and churn prevention.</li>
+        <li>Conducted deep architectural database audit and refactoring on an overloaded 77-column orders table (eliminating N+1 queries, introducing composite B-Tree indexes, normalizing schema), reducing report queries <strong>26x (12s &rarr; 450ms)</strong>.</li>
+        <li>Eliminated the "1-cent rounding error" in billing by converting inaccurate float fields to <code style="font-family:monospace;font-size:7.5pt;background:#e2e8f0;padding:0 2px;">DECIMAL(12,2)</code> with zero data corruption.</li>
+        <li>Enforced high availability (99.98%), established code review guidelines, and mentored engineering peers in DDD and database query profiling.</li>
+      </ul>
+      <div class="job-stack">
+        <span>Microservices</span><span>Java</span><span>PHP 8</span><span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>RabbitMQ</span><span>Docker</span><span>CI/CD</span>
+      </div>
+    </article>
+
+    <!-- Role 3: Absolutist -->
+    <article class="job-card">
+      <div class="job-header">
+        <div class="job-title-row">
+          <span class="job-role">Web &amp; Backend Developer / Full Stack Engineer</span>
+          <span class="job-company">&bull; Absolutist</span>
+        </div>
+        <span class="job-date">May 2020 &mdash; Apr 2022 &middot; 2 yrs</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Engineered server-side logic and web infrastructure for gaming titles (<strong>Gamedev and Back-end Operations</strong>).</li>
+        <li>Built high-throughput REST APIs for client game communications, player profile synchronization, and game state persistence.</li>
+        <li>Optimized MySQL database queries and implemented Redis caching to handle sudden traffic peaks during updates and live events.</li>
+      </ul>
+      <div class="job-stack">
+        <span>Gamedev</span><span>Back-end Operations</span><span>PHP</span><span>MySQL</span><span>Redis</span><span>REST API</span>
+      </div>
+    </article>
+
+    <!-- Role 4: Babenko eCommerce GmbH -->
+    <article class="job-card">
+      <div class="job-header">
+        <div class="job-title-row">
+          <span class="job-role">PHP Backend Developer / Magento Backend Developer</span>
+          <span class="job-company">&bull; Babenko eCommerce GmbH</span>
+        </div>
+        <span class="job-date">May 2019 &mdash; Apr 2020 &middot; 1 yr</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Developed modular software extensions and customized enterprise e-commerce solutions using <strong>Magento</strong> and <strong>PHP</strong>.</li>
+        <li>Integrated external payment gateways, shipping logistics providers, and ERP/CRM inventory management systems.</li>
+        <li>Optimized checkout performance, cart state management, and product catalog indexing for European clients.</li>
+      </ul>
+      <div class="job-stack">
+        <span>Software Development</span><span>PHP</span><span>Magento</span><span>MySQL</span><span>E-Commerce</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- Key Engineering Projects -->
+  <section>
+    <h2 class="section-title">Key Engineering Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">Automated Marketing Campaign Engine</span>
+          <span class="project-badge">Event-Driven &bull; High Load</span>
+        </div>
+        <p class="project-desc">
+          Engineered a distributed trigger automation engine processing platform-wide events. Decoupled via RabbitMQ queues and Redis Streams workers, eliminating HTTP timeouts and enabling automated retention chains, abandoned cart recovery, and omnichannel delivery.
+        </p>
+        <div class="job-stack">
+          <span>PHP 8</span><span>RabbitMQ</span><span>Redis</span><span>Webhooks</span><span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-name">Database Schema Normalization &amp; Optimization</span>
+          <span class="project-badge">DB Optimization &bull; 26x Speedup</span>
+        </div>
+        <p class="project-desc">
+          Technical audit and deep refactoring of an overloaded 77-column orders table (God-Table antipattern). Eliminated ORM N+1 bottlenecks, added composite B-Tree indexes, resolved 1-cent rounding bug via DECIMAL(12,2), reducing report latency from 12s to 450ms.
+        </p>
+        <div class="job-stack">
+          <span>PostgreSQL</span><span>MySQL</span><span>PHP 8</span><span>EXPLAIN ANALYZE</span><span>Redis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2 class="section-title">Education</h2>
+    <div class="edu-card">
+      <div>
+        <span class="edu-inst">National Mining University</span>
+        <span class="edu-degree">&bull; Specialist Degree in Computer Science, Software &amp; Systems Engineering</span>
+      </div>
+      <div class="edu-date">2007 &mdash; 2012</div>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

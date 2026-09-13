@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO & Primary Meta Tags -->
+  <title>Oleksii Kashtanov | Senior PHP &amp; Backend Developer | Portfolio &amp; CV</title>
+  <meta name="title" content="Oleksii Kashtanov | Senior PHP &amp; Backend Developer | Portfolio &amp; CV">
+  <meta name="description" content="Senior PHP / Backend Developer with 6+ years of experience designing high-throughput microservices, scalable RESTful APIs, and resilient database architectures using PHP 8+, Symfony, Laravel, PostgreSQL, and Redis.">
+  <meta name="keywords" content="PHP Developer, Backend Developer, Symfony, Laravel, PHP 8, PostgreSQL, Redis, Docker, Microservices, REST API, Clean Architecture, SOLID">
+  <meta name="author" content="Oleksii Kashtanov">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aleks-kash.github.io/portfolio/">
+  <meta property="og:title" content="Oleksii Kashtanov | Senior PHP &amp; Backend Developer">
+  <meta property="og:description" content="Explore backend projects, system architecture case studies, and engineering achievements in PHP 8, Symfony, Laravel, and high-concurrency systems.">
+  <meta property="og:image" content="https://aleks-kash.github.io/portfolio/assets/og-preview.png">
+
+  <!-- Inline SVG Tech Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23080d1a'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' fill='%2338bdf8' font-family='monospace' font-weight='bold' font-size='18'>&gt;_</text></svg>">
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Modern Font Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Header & Navigation (Semantic, Accessible, Static Multi-language)
+       ========================================================================= -->
+  <header class="site-header" id="header" role="banner">
+    <div class="container nav-container">
+
+      <!-- Brand Logo / Prompt -->
+      <a href="#hero" class="brand-logo" aria-label="Oleksii Kashtanov - Homepage">
+        <span class="brand-prompt">php&gt;</span>
+        <span class="brand-text">Oleksii Kashtanov</span>
+        <span class="brand-role">/ Backend Dev</span>
+      </a>
+
+      <!-- Pure CSS Mobile Toggle Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle mobile menu">
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contacts" class="nav-link">Contacts</a>
+      </nav>
+
+      <!-- Navigation Actions: Language Switcher & Hamburger Toggle -->
+      <div class="nav-actions">
+        <!-- Static Language Switcher -->
+        <div class="lang-switcher" aria-label="Select Language">
+          <a href="index.html" class="lang-btn active" aria-current="page" title="English">EN</a>
+          <a href="ua/index.html" class="lang-btn" title="Українська">UA</a>
+          <a href="ru/index.html" class="lang-btn" title="Русский">RU</a>
+        </div>
+
+        <!-- Mobile Hamburger Icon (Pure CSS) -->
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Open navigation menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </label>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- =========================================================================
+         2. Hero Section (Elevator pitch, CTAs, Live Terminal Preview)
+         ========================================================================= -->
+    <section class="section hero" id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <!-- Badges: Availability, Experience & English Level -->
+            <div class="hero-badges">
+              <div class="status-badge" role="status">
+                <span class="status-pulse" aria-hidden="true"></span>
+                <span>Available for Remote &amp; Relocation</span>
+              </div>
+              <div class="exp-badge">
+                <span>⚡ 6+ Years Exp</span>
+              </div>
+              <div class="lang-level-badge">
+                <span>🌐 English: B1 (Intermediate)</span>
+              </div>
+            </div>
+
+            <!-- Hero Headline -->
+            <h1 class="hero-title" id="hero-title">
+              Hi, I'm <span class="gradient-text">Oleksii</span>
+            </h1>
+
+            <div class="hero-subtitle">
+              Senior PHP &amp; Backend Engineer &bull; 6+ Years Exp
+            </div>
+
+            <!-- Recruiter & Tech-Focused Pitch -->
+            <p class="hero-bio">
+              With <strong>6+ years of experience</strong>, I architect resilient, high-throughput backend services and clean REST/gRPC APIs. Specializing in <strong>PHP 8.x</strong>, <strong>Symfony</strong>, <strong>Laravel</strong>, <strong>PostgreSQL</strong>, and <strong>Redis</strong>, with an uncompromising focus on DDD, clean code (SOLID), and database query optimization under high concurrency.
+            </p>
+
+            <!-- Call-to-Actions -->
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary" id="cta-view-projects">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+                View Projects
+              </a>
+              <a href="#contacts" class="btn btn-secondary" id="cta-contact-me">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                Contact Me
+              </a>
+              <a href="assets/Oleksii_Kashtanov_PHP_Backend_Developer_CV_EN.pdf" class="btn btn-cv" id="cta-download-cv" download="Oleksii_Kashtanov_PHP_Backend_Developer_CV_EN.pdf" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                Download CV (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive-looking Backend Architecture / Terminal Card -->
+          <aside class="hero-card" aria-label="Backend Stack Terminal Preview">
+            <div class="card-header-bar">
+              <div class="terminal-dots" aria-hidden="true">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <span class="terminal-title">bash - engineer@server:~</span>
+            </div>
+            <div class="card-body-terminal">
+              <div class="terminal-line">
+                <span class="cmd-prompt">$</span>
+                <span class="cmd-text">php -v</span>
+              </div>
+              <div class="terminal-line cmd-output">
+                PHP 8.3.11 (cli) (built: OPcache, JIT, pcntl enabled)
+              </div>
+              <div class="terminal-line">
+                <span class="cmd-prompt">$</span>
+                <span class="cmd-text">composer check:system</span>
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ Architecture: Hexagonal / Clean Architecture (SOLID)
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ Static Analysis: PHPStan Level 8 [0 errors]
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ Test Coverage: PHPUnit 10 &amp; Pest (94% branches)
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ Caching &amp; Queues: Redis Cluster + RabbitMQ [Ready]
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ AI &amp; LLM Integrations: Claude &amp; OpenAI APIs [Connected]
+              </div>
+              <div class="terminal-line cmd-output cmd-comment">
+                # System Status: High-load ready (15,000+ RPM capacity)
+              </div>
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. About Me Section (Mindset, Architecture, Engineering Principles)
+         ========================================================================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title" id="about-title">Engineering Mindset &amp; Experience</h2>
+          <p class="section-desc">Writing maintainable backend systems that stay fast under peak traffic.</p>
+        </div>
+
+        <div class="about-grid">
+
+          <article class="about-text">
+            <p class="lead">
+              I am a backend specialist who views code as a long-term business asset. Over the past 6+ years, I have architected and maintained large-scale web services, FinTech platforms, and SaaS products built on modern PHP.
+            </p>
+            <p>
+              My engineering philosophy revolves around <strong>SOLID principles</strong>, <strong>Domain-Driven Design (DDD)</strong>, and <strong>Clean Architecture</strong>. I believe frameworks like Symfony and Laravel are powerful delivery mechanisms, but the core business logic must remain decoupled, deterministic, and rigorously covered with unit and integration tests.
+            </p>
+            <p>
+              Beyond writing clean code, I specialize in eliminating performance bottlenecks: tuning PostgreSQL/MySQL execution plans (indexes, partitioning, EXPLAIN ANALYZE), implementing multi-tier Redis caching strategies, and designing asynchronous worker pipelines with RabbitMQ and Redis Streams.
+            </p>
+          </article>
+
+          <!-- Highlights Sidebar -->
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-header">
+                <span class="highlight-icon">⚡</span>
+                <h3 class="highlight-title">Performance &amp; Scale First</h3>
+              </div>
+              <p class="highlight-desc">Deep profiling with Blackfire and Xdebug; optimizing complex joins, indexing strategies, and database connection pooling.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-header">
+                <span class="highlight-icon">🛡️</span>
+                <h3 class="highlight-title">Reliability &amp; Data Integrity</h3>
+              </div>
+              <p class="highlight-desc">Strict ACID transaction boundaries, idempotency keys, distributed Redis locks, and comprehensive PHPUnit test suites.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-header">
+                <span class="highlight-icon">🤝</span>
+                <h3 class="highlight-title">Cross-Functional Team Player</h3>
+              </div>
+              <p class="highlight-desc">Clear OpenAPI/Swagger specs for frontend teams, pragmatic code reviews, and reproducible Docker development workflows.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. Technical Skills (Grouped Matrix)
+         ========================================================================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Technical Stack</div>
+          <h2 class="section-title" id="skills-title">Core Competencies &amp; Tooling</h2>
+          <p class="section-desc">A curated snapshot of technologies I use daily to build production-grade platforms.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Backend & Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">&lt;/&gt;</div>
+              <h3 class="skill-category-title">Backend &amp; Languages</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">PHP 8+ (8.2 / 8.3)</li>
+              <li class="skill-tag priority">Symfony</li>
+              <li class="skill-tag priority">Laravel</li>
+              <li class="skill-tag priority">Yii / Yii 2</li>
+              <li class="skill-tag priority">Node.js (Express, Nest.js)</li>
+              <li class="skill-tag">Python (FastAPI, Django)</li>
+              <li class="skill-tag">Java (Spring Boot)</li>
+              <li class="skill-tag">Composer</li>
+              <li class="skill-tag">Doctrine ORM</li>
+              <li class="skill-tag">Eloquent ORM</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Architecture & Clean Code -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">📐</div>
+              <h3 class="skill-category-title">Architecture &amp; Clean Code</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">Clean Architecture</li>
+              <li class="skill-tag priority">Domain-Driven Design (DDD)</li>
+              <li class="skill-tag priority">SOLID &amp; OOP</li>
+              <li class="skill-tag priority">GoF Design Patterns</li>
+              <li class="skill-tag priority">Legacy Code Refactoring</li>
+              <li class="skill-tag">Microservices Architecture</li>
+              <li class="skill-tag">Monolithic Architecture</li>
+              <li class="skill-tag">Event-Driven Architecture</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Integrations, API & Messaging -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">🔄</div>
+              <h3 class="skill-category-title">Integrations, APIs &amp; Queues</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">RESTful APIs</li>
+              <li class="skill-tag priority">OpenAPI / Swagger 3.0</li>
+              <li class="skill-tag priority">WebSockets (Real-time)</li>
+              <li class="skill-tag priority">SOAP</li>
+              <li class="skill-tag priority">RabbitMQ (Queues &amp; Workers)</li>
+              <li class="skill-tag priority">Redis Streams &amp; Pub/Sub</li>
+              <li class="skill-tag">GraphQL</li>
+              <li class="skill-tag">Webhooks &amp; Event Bus</li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Databases & Search -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">🗄️</div>
+              <h3 class="skill-category-title">Databases &amp; Search</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">PostgreSQL</li>
+              <li class="skill-tag priority">MySQL</li>
+              <li class="skill-tag priority">SQLite</li>
+              <li class="skill-tag priority">Redis (Cache, Locks, Mutex)</li>
+              <li class="skill-tag priority">Query &amp; Index Optimization</li>
+              <li class="skill-tag">Manticore Search (Basics / Concepts)</li>
+              <li class="skill-tag">Elasticsearch</li>
+              <li class="skill-tag">B-Tree &amp; GIN Indexes</li>
+              <li class="skill-tag">Database Migrations</li>
+            </ul>
+          </div>
+
+          <!-- Category 5: DevOps & Systems -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">⚙️</div>
+              <h3 class="skill-category-title">DevOps, Cloud &amp; Systems</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">Docker &amp; Docker-compose</li>
+              <li class="skill-tag priority">*nix / Linux / Ubuntu</li>
+              <li class="skill-tag priority">Bash Scripting</li>
+              <li class="skill-tag priority">Git (GitHub / Bitbucket)</li>
+              <li class="skill-tag">AWS (S3, EC2, RDS)</li>
+              <li class="skill-tag">CI/CD (GitHub Actions, GitLab)</li>
+              <li class="skill-tag">Nginx / PHP-FPM Tuning</li>
+              <li class="skill-tag">PHPUnit &amp; Pest</li>
+            </ul>
+          </div>
+
+          <!-- Category 6: AI Tooling & LLM Integrations -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">🧠</div>
+              <h3 class="skill-category-title">AI Tooling &amp; LLM Integrations</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">LLM Integrations (APIs, RAG, Tool Use)</li>
+              <li class="skill-tag cert">Claude Anthropic (Anthropic Certified)</li>
+              <li class="skill-tag priority">Prompt Engineering</li>
+              <li class="skill-tag">Google AntiGravity IDE</li>
+              <li class="skill-tag">ChatGPT / OpenAI API</li>
+              <li class="skill-tag">GitHub Copilot</li>
+            </ul>
+          </div>
+
+          <!-- Category 7: Frontend & UI -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">💻</div>
+              <h3 class="skill-category-title">Frontend &amp; Client Technologies</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">JavaScript (ES6+)</li>
+              <li class="skill-tag priority">Vue.js</li>
+              <li class="skill-tag priority">HTML5 &amp; CSS3</li>
+              <li class="skill-tag">jQuery</li>
+              <li class="skill-tag">Mobile-First Responsive Design</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. Featured Projects / Portfolio
+         ========================================================================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Portfolio</div>
+          <h2 class="section-title" id="projects-title">Featured Engineering Projects</h2>
+          <p class="section-desc">Real-world backend architectures, scalable services, and developer tooling.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Campaign Automation Engine & AI Integration -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-badge">Event-Driven &amp; AI Integration</span>
+              <h3 class="project-title">Event-Driven Campaign Automation Engine &amp; AI Assistant Integration</h3>
+              <p class="project-desc">
+                An event-driven platform enabling business teams to configure reactive triggers for marketing campaigns, customer retention flows, and automated cohort segmentation. The engine reacts in real time to platform events, dispatches notifications, and updates user groups. Integrated an AI assistant to configure triggers via natural language directly from the mobile app.
+              </p>
+            </div>
+
+            <ul class="project-metrics-list">
+              <li><strong>Asynchronous Queue Architecture:</strong> Engineered high-throughput event processing pipeline using RabbitMQ and Redis Streams with strict idempotency, zero duplicate actions, and sub-second trigger dispatching.</li>
+              <li><strong>AI (LLM) Mobile Integration:</strong> Built an LLM-driven configuration bridge enabling business managers to define, validate, and activate complex triggers via natural language inside the mobile app.</li>
+              <li><strong>Retention &amp; Lifecycle Automation:</strong> Automated workflow sequences such as customer retention loops, abandoned cart recovery, promo notifications, dynamic user cohort migrations, and many others.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span>PHP 8.2+</span>
+              <span>RabbitMQ</span>
+              <span>Redis Streams</span>
+              <span>LLM / AI Integration</span>
+              <span>WebSockets</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Database Schema Normalization & Query Optimization -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-badge">Database Optimization &amp; Architecture</span>
+              <h3 class="project-title">Order Database Schema Normalization &amp; SQL Query Optimization</h3>
+              <p class="project-desc">
+                Comprehensive technical audit and deep architectural refactoring of a legacy, heavily bloated e-commerce order table (<code class="inline-code">orders</code>, 77 columns, classic "God Table" antipattern), eliminating ORM N+1 query bottlenecks and establishing high financial precision and database integrity.
+              </p>
+            </div>
+
+            <ul class="project-metrics-list">
+              <li><strong>26x Performance Gain (12s &rarr; 450ms):</strong> Slashed slow aggregate report generation and heavy queries by 96% via composite B-Tree indexes, N+1 query elimination, and targeted raw SQL query optimizations.</li>
+              <li><strong>Resolved "1-Cent Discrepancy":</strong> Migrated monetary columns from imprecise floating-point <code class="inline-code">DOUBLE</code> to exact <code class="inline-code">DECIMAL(12,2)</code>, permanently eliminating rounding discrepancies across checkout and billing.</li>
+              <li><strong>77-Column God-Table Decomposition:</strong> Formulated an executive-approved migration roadmap: decomposed entities (isolated shipping, logistics, billing, and 12 delivery dates), replaced unbounded <code class="inline-code">LONGTEXT</code> (up to 4 GB) with structured <code class="inline-code">JSON</code>/<code class="inline-code">VARCHAR</code>, enforced <code class="inline-code">UNIQUE</code> constraints on tokens/hashes, and fixed nullable 3-state booleans to <code class="inline-code">NOT NULL DEFAULT 0</code>.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>PHP 8</span>
+              <span>EXPLAIN ANALYZE</span>
+              <span>Composite Indexes</span>
+              <span>Redis</span>
+              <span>Database Refactoring</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. Work Experience / Timeline (Recruiter Tested & Verified)
+         ========================================================================= -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Career History</div>
+          <h2 class="section-title" id="experience-title">Work Experience &amp; Impact</h2>
+          <p class="section-desc">Track record of delivering scalable architectures and measurable business outcomes.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Role 1: Efumo SSC - Digital Transformation -->
+          <div class="timeline-item">
+            <span class="timeline-marker current" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <img src="assets/img/efumo.png" alt="Efumo SSC logo" class="timeline-company-logo" width="44" height="44" loading="lazy">
+                  <div class="timeline-title-content">
+                    <div class="timeline-heading-and-date">
+                      <h3 class="timeline-role">PHP Backend Developer</h3>
+                      <span class="timeline-date">Jul 2026 &mdash; Aug 2026 &middot; 2 mos</span>
+                    </div>
+                    <div class="timeline-company-row">
+                      <span class="timeline-company">Efumo SSC - Digital Transformation</span>
+                      <span class="timeline-location">&bull; Part-time</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Developed and maintained reliable backend components with <strong>PHP</strong> supporting enterprise digital transformation initiatives.</li>
+                <li>Engineered RESTful API services, optimized service communication contracts, and structured external data feeds.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span>PHP</span>
+                <span>Backend Development</span>
+                <span>Digital Transformation</span>
+                <span>REST API</span>
+                <span>Git</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Role 2: WellnessLiving -->
+          <div class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <img src="assets/img/wellnessliving.png" alt="WellnessLiving logo" class="timeline-company-logo" width="44" height="44" loading="lazy">
+                  <div class="timeline-title-content">
+                    <div class="timeline-heading-and-date">
+                      <h3 class="timeline-role">Senior PHP Backend Developer / Full Stack Engineer</h3>
+                      <span class="timeline-date">May 2022 &mdash; May 2026 &middot; 4 yrs 1 mo</span>
+                    </div>
+                    <div class="timeline-company-row">
+                      <span class="timeline-company">WellnessLiving</span>
+                      <span class="timeline-location">&bull; Full-time</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Architected and developed scalable microservices and core platform subsystems utilizing <strong>PHP</strong> and <strong>Java</strong> for an enterprise SaaS ecosystem.</li>
+                <li>Designed and built an event-driven marketing campaign automation engine (RabbitMQ, Redis, Webhooks) for client retention, churn prevention, and omnichannel triggers.</li>
+                <li>Conducted deep architectural database refactoring on critical orders schema (eliminating N+1 queries, composite B-Tree indexes, data normalization), cutting report queries 26x (12s &rarr; 450ms).</li>
+                <li>Maintained 99.98% platform reliability, enforced robust coding standards, and mentored engineering peers.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span>Microservices</span>
+                <span>Java</span>
+                <span>PHP 8</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>Redis</span>
+                <span>RabbitMQ</span>
+                <span>Docker</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Role 3: Absolutist -->
+          <div class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <img src="assets/img/absolutist.png" alt="Absolutist logo" class="timeline-company-logo" width="44" height="44" loading="lazy">
+                  <div class="timeline-title-content">
+                    <div class="timeline-heading-and-date">
+                      <h3 class="timeline-role">Web &amp; Backend Developer / Full Stack Engineer</h3>
+                      <span class="timeline-date">May 2020 &mdash; Apr 2022 &middot; 2 yrs</span>
+                    </div>
+                    <div class="timeline-company-row">
+                      <span class="timeline-company">Absolutist</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Developed server-side infrastructure and web systems for company gaming products (<strong>Gamedev and Back-end Operations</strong>).</li>
+                <li>Engineered high-performance REST APIs for client game communications, player profile synchronization, and game state persistence.</li>
+                <li>Optimized MySQL database queries and Redis caching to handle sudden traffic peaks during updates and seasonal events.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span>Gamedev</span>
+                <span>Back-end Operations</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Redis</span>
+                <span>REST API</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Role 4: Babenko eCommerce GmbH -->
+          <div class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <img src="assets/img/babenko.png" alt="Babenko eCommerce GmbH logo" class="timeline-company-logo" width="44" height="44" loading="lazy">
+                  <div class="timeline-title-content">
+                    <div class="timeline-heading-and-date">
+                      <h3 class="timeline-role">PHP Backend Developer / Magento Backend Developer</h3>
+                      <span class="timeline-date">May 2019 &mdash; Apr 2020 &middot; 1 yr</span>
+                    </div>
+                    <div class="timeline-company-row">
+                      <span class="timeline-company">Babenko eCommerce GmbH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Developed custom software solutions and modular extensions for enterprise e-commerce stores using <strong>Magento</strong> and <strong>PHP</strong>.</li>
+                <li>Integrated external payment gateways, shipping logistics providers, and ERP/CRM systems.</li>
+                <li>Optimized checkout performance, cart state management, and product catalog indexing for European clients.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span>Software Development</span>
+                <span>PHP</span>
+                <span>Magento</span>
+                <span>MySQL</span>
+                <span>E-Commerce</span>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. Education Section
+         ========================================================================= -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Education</div>
+          <h2 class="section-title" id="education-title">Academic Background</h2>
+          <p class="section-desc">Formal university education in Computer Science and Software Engineering.</p>
+        </div>
+
+        <div class="education-wrapper">
+          <article class="education-card">
+            <div class="education-header">
+              <div>
+                <h3 class="education-institution">National Mining University</h3>
+                <div class="education-degree">
+                  <strong>Major:</strong> Information Technology &bull; Software Engineer
+                </div>
+              </div>
+              <span class="education-period">2007 &mdash; 2012</span>
+            </div>
+
+            <p style="color: var(--text-muted); font-size: 0.96rem; line-height: 1.6; margin-bottom: 0;">
+              Comprehensive 5-year academic degree. In-depth coursework in data structures and algorithms, software architecture design, relational database systems, and low-level computer systems.
+            </p>
+
+            <div class="education-badges">
+              <span class="edu-badge diploma">
+                <span aria-hidden="true">🎓</span> Specialist Degree in Computer Science
+              </span>
+              <span class="edu-badge diploma">
+                <span aria-hidden="true">🌐</span> International Standard Diploma
+              </span>
+              <span class="edu-badge">
+                Computer Science &amp; Software Engineering
+              </span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. Contacts & Footer Section (HR Recruitment Accessibility)
+         ========================================================================= -->
+    <section class="section" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+
+        <div class="contacts-wrapper">
+          <div class="contacts-grid">
+
+            <div class="contacts-lead">
+              <div class="section-tag">Let's Connect</div>
+              <h3 id="contacts-title">Interested in building resilient backends together?</h3>
+              <p>
+                I am actively considering Senior PHP / Backend Engineer opportunities (Full-time, Contract, or Advisory). Whether you have a complex scaling problem or want to review my code, feel free to reach out.
+              </p>
+
+              <div class="availability-box">
+                <span class="availability-icon">🌍</span>
+                <span class="availability-text">
+                  <strong>Status:</strong> Open to Remote (Worldwide / CET / UTC+2) &amp; Relocation &bull; <strong>English:</strong> B1 (Intermediate)
+                </span>
+              </div>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="contacts-links">
+
+              <a href="mailto:aleks.kash.php@gmail.com" class="contact-card" id="contact-email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <div class="contact-info">
+                  <span class="contact-label">Direct Email</span>
+                  <span class="contact-value">aleks.kash.php@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://t.me/aleks_kash" class="contact-card" id="contact-telegram" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832.946z"/></svg>
+                <div class="contact-info">
+                  <span class="contact-label">Telegram</span>
+                  <span class="contact-value">@dev_unit</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/a-kashtanov" class="contact-card" id="contact-linkedin" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+                <div class="contact-info">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">linkedin.com/in/a-kashtanov</span>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       8. Minimal Semantic Footer
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        &copy; 2026 Oleksii Kashtanov. All rights reserved. Built with semantic HTML5 &amp; CSS3. Hosted on GitHub Pages.
+      </div>
+      <a href="#hero" class="footer-back-to-top" aria-label="Scroll back to top">
+        <span>Back to top</span>
+        <span aria-hidden="true">&uarr;</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

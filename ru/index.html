@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO & Primary Meta Tags -->
+  <title>Алексей Каштанов | Senior PHP &amp; Backend Developer | Портфолио и резюме</title>
+  <meta name="title" content="Алексей Каштанов | Senior PHP &amp; Backend Developer | Портфолио и резюме">
+  <meta name="description" content="Senior PHP / Backend разработчик с 6+ годами опыта проектирования микросервисов, высоконагруженных RESTful API и архитектуры баз данных на PHP 8+, Symfony, Laravel, PostgreSQL и Redis.">
+  <meta name="keywords" content="PHP Developer, Backend Developer, Symfony, Laravel, PHP 8, PostgreSQL, Redis, Docker, Microservices, REST API, Clean Architecture, SOLID">
+  <meta name="author" content="Алексей Каштанов">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aleks-kash.github.io/portfolio/ru/">
+  <meta property="og:title" content="Алексей Каштанов | Senior PHP &amp; Backend Developer">
+  <meta property="og:description" content="Бэкенд-проекты, архитектура масштабируемых систем и достижения на PHP 8, Symfony, Laravel, PostgreSQL и Redis.">
+
+  <!-- Inline SVG Tech Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23080d1a'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' fill='%2338bdf8' font-family='monospace' font-weight='bold' font-size='18'>&gt;_</text></svg>">
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Modern Font Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Header & Navigation (Русская версия)
+       ========================================================================= -->
+  <header class="site-header" id="header" role="banner">
+    <div class="container nav-container">
+
+      <!-- Brand Logo / Prompt -->
+      <a href="#hero" class="brand-logo" aria-label="Алексей Каштанов - Главная страница">
+        <span class="brand-prompt">php&gt;</span>
+        <span class="brand-text">Алексей Каштанов</span>
+        <span class="brand-role">/ Backend Dev</span>
+      </a>
+
+      <!-- Pure CSS Mobile Toggle Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Открыть мобильное меню">
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" role="navigation" aria-label="Основная навигация">
+        <a href="#about" class="nav-link">Обо мне</a>
+        <a href="#skills" class="nav-link">Навыки</a>
+        <a href="#projects" class="nav-link">Проекты</a>
+        <a href="#experience" class="nav-link">Опыт</a>
+        <a href="#education" class="nav-link">Образование</a>
+        <a href="#contacts" class="nav-link">Контакты</a>
+      </nav>
+
+      <!-- Navigation Actions: Language Switcher & Hamburger Toggle -->
+      <div class="nav-actions">
+        <!-- Static Language Switcher -->
+        <div class="lang-switcher" aria-label="Выбор языка">
+          <a href="../index.html" class="lang-btn" title="English">EN</a>
+          <a href="../ua/index.html" class="lang-btn" title="Українська">UA</a>
+          <a href="index.html" class="lang-btn active" aria-current="page" title="Русский">RU</a>
+        </div>
+
+        <!-- Mobile Hamburger Icon -->
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Меню навигации">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </label>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- =========================================================================
+         2. Hero Section
+         ========================================================================= -->
+    <section class="section hero" id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <!-- Badges: Availability, Experience & English Level -->
+            <div class="hero-badges">
+              <div class="status-badge" role="status">
+                <span class="status-pulse" aria-hidden="true"></span>
+                <span>Доступен для Remote &amp; релокации</span>
+              </div>
+              <div class="exp-badge">
+                <span>⚡ 6+ лет опыта</span>
+              </div>
+              <div class="lang-level-badge">
+                <span>🌐 English: B1 (Intermediate)</span>
+              </div>
+            </div>
+
+            <!-- Hero Headline -->
+            <h1 class="hero-title" id="hero-title">
+              Привет, я <span class="gradient-text">Алексей</span>
+            </h1>
+
+            <div class="hero-subtitle">
+              Senior PHP &amp; Backend Инженер &bull; 6+ лет опыта
+            </div>
+
+            <!-- Pitch -->
+            <p class="hero-bio">
+              Более <strong>6 лет</strong> проектирую отказоустойчивые бэкенд-сервисы с высокой пропускной способностью и чистые REST/gRPC API. Специализируюсь на <strong>PHP 8.x</strong>, <strong>Symfony</strong>, <strong>Laravel</strong>, <strong>PostgreSQL</strong> и <strong>Redis</strong>, с фокусом на DDD, чистой архитектуре (SOLID) и оптимизации запросов к базам данных при высоких нагрузках.
+            </p>
+
+            <!-- Call-to-Actions -->
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary" id="cta-view-projects">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+                Смотреть проекты
+              </a>
+              <a href="#contacts" class="btn btn-secondary" id="cta-contact-me">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                Связаться со мной
+              </a>
+              <a href="../assets/Oleksii_Kashtanov_PHP_Backend_Developer_CV_RU.pdf" class="btn btn-cv" id="cta-download-cv" download="Oleksii_Kashtanov_PHP_Backend_Developer_CV_RU.pdf" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                Скачать CV (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Terminal Card -->
+          <aside class="hero-card" aria-label="Backend Stack Terminal Preview">
+            <div class="card-header-bar">
+              <div class="terminal-dots" aria-hidden="true">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <span class="terminal-title">bash - engineer@server:~</span>
+            </div>
+            <div class="card-body-terminal">
+              <div class="terminal-line">
+                <span class="cmd-prompt">$</span>
+                <span class="cmd-text">php -v</span>
+              </div>
+              <div class="terminal-line cmd-output">
+                PHP 8.3.11 (cli) (built: OPcache, JIT, pcntl enabled)
+              </div>
+              <div class="terminal-line">
+                <span class="cmd-prompt">$</span>
+                <span class="cmd-text">composer check:system</span>
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ Архитектура: Hexagonal / Clean Architecture (SOLID)
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ Статический анализ: PHPStan Level 8 [0 ошибок]
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ Покрытие тестами: PHPUnit 10 &amp; Pest (94%)
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ Кэширование и очереди: Redis Cluster + RabbitMQ [Ready]
+              </div>
+              <div class="terminal-line cmd-output cmd-highlight">
+                ✓ AI &amp; LLM интеграции: Claude &amp; OpenAI APIs [Connected]
+              </div>
+              <div class="terminal-line cmd-output cmd-comment">
+                # Статус: Готовность к High-Load (15,000+ RPM)
+              </div>
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. About Me Section
+         ========================================================================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Обо мне</div>
+          <h2 class="section-title" id="about-title">Инженерный подход и опыт</h2>
+          <p class="section-desc">Создание масштабируемых систем, которые сохраняют скорость при пиковых нагрузках.</p>
+        </div>
+
+        <div class="about-grid">
+
+          <article class="about-text">
+            <p class="lead">
+              Я рассматриваю программный код как долгосрочный бизнес-актив. Более 6 лет я проектирую и поддерживаю масштабируемые веб-сервисы, FinTech платформы и SaaS-решения на современном стеке PHP.
+            </p>
+            <p>
+              Моя инженерная философия строится на <strong>принципах SOLID</strong>, <strong>Domain-Driven Design (DDD)</strong> и <strong>Чистой архитектуре</strong>. Фреймворки (Symfony, Laravel) — отличные инструменты доставки, однако ключевая бизнес-логика должна оставаться независимой, детерминированной и тщательно покрытой модульными и интеграционными тестами.
+            </p>
+            <p>
+              Помимо чистоты кода, я специализируюсь на устранении узких мест производительности: анализе планов выполнения запросов в PostgreSQL/MySQL (индексы, секционирование, EXPLAIN ANALYZE), многоуровневом кэшировании в Redis и построении асинхронных конвейеров задач на RabbitMQ и Redis Streams.
+            </p>
+          </article>
+
+          <!-- Highlights Sidebar -->
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-header">
+                <span class="highlight-icon">⚡</span>
+                <h3 class="highlight-title">Производительность и масштаб</h3>
+              </div>
+              <p class="highlight-desc">Глубокое профилирование с Blackfire и Xdebug; оптимизация тяжелых SQL-запросов, индексов и пула соединений БД.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-header">
+                <span class="highlight-icon">🛡️</span>
+                <h3 class="highlight-title">Надежность и целостность данных</h3>
+              </div>
+              <p class="highlight-desc">Строгие границы ACID-транзакций, идемпотентные ключи запросов, распределенные блокировки Redis и тесты PHPUnit.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-header">
+                <span class="highlight-icon">🤝</span>
+                <h3 class="highlight-title">Командное взаимодействие</h3>
+              </div>
+              <p class="highlight-desc">Понятные спецификации OpenAPI/Swagger для фронтенда, конструктивные код-ревью и воспроизводимый Docker-контур.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. Technical Skills
+         ========================================================================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Технический стек</div>
+          <h2 class="section-title" id="skills-title">Ключевые компетенции и инструменты</h2>
+          <p class="section-desc">Технологии, которые я ежедневно использую для создания production-систем.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Backend & Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">&lt;/&gt;</div>
+              <h3 class="skill-category-title">Бэкенд &amp; Языки программирования</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">PHP 8+ (8.2 / 8.3)</li>
+              <li class="skill-tag priority">Symfony</li>
+              <li class="skill-tag priority">Laravel</li>
+              <li class="skill-tag priority">Yii / Yii 2</li>
+              <li class="skill-tag priority">Node.js (Express, Nest.js)</li>
+              <li class="skill-tag">Python (FastAPI, Django)</li>
+              <li class="skill-tag">Java (Spring Boot)</li>
+              <li class="skill-tag">Composer</li>
+              <li class="skill-tag">Doctrine ORM</li>
+              <li class="skill-tag">Eloquent ORM</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Architecture & Approaches -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">📐</div>
+              <h3 class="skill-category-title">Архитектура &amp; Подходы</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">Чистая архитектура</li>
+              <li class="skill-tag priority">Domain-Driven Design (DDD)</li>
+              <li class="skill-tag priority">SOLID &amp; ООП</li>
+              <li class="skill-tag priority">Паттерны проектирования (GoF)</li>
+              <li class="skill-tag priority">Рефакторинг legacy-кода</li>
+              <li class="skill-tag">Микросервисная архитектура</li>
+              <li class="skill-tag">Монолитная архитектура</li>
+              <li class="skill-tag">Event-Driven Architecture</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Integrations, API & Queues -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">🔄</div>
+              <h3 class="skill-category-title">Интеграции, API &amp; Очереди</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">RESTful APIs</li>
+              <li class="skill-tag priority">OpenAPI / Swagger 3.0</li>
+              <li class="skill-tag priority">WebSockets (Real-time)</li>
+              <li class="skill-tag priority">SOAP</li>
+              <li class="skill-tag priority">RabbitMQ (Queues &amp; Workers)</li>
+              <li class="skill-tag priority">Redis Streams &amp; Pub/Sub</li>
+              <li class="skill-tag">GraphQL</li>
+              <li class="skill-tag">Webhooks &amp; Event Bus</li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Databases & Search -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">🗄️</div>
+              <h3 class="skill-category-title">Базы данных &amp; Поиск</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">PostgreSQL</li>
+              <li class="skill-tag priority">MySQL</li>
+              <li class="skill-tag priority">SQLite</li>
+              <li class="skill-tag priority">Redis (Кэш, Locks, Mutex)</li>
+              <li class="skill-tag priority">Оптимизация запросов &amp; индексов</li>
+              <li class="skill-tag">Manticore Search (базовый опыт / концепты)</li>
+              <li class="skill-tag">Elasticsearch</li>
+              <li class="skill-tag">B-Tree &amp; GIN индексы</li>
+              <li class="skill-tag">Миграции БД</li>
+            </ul>
+          </div>
+
+          <!-- Category 5: DevOps & Systems -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">⚙️</div>
+              <h3 class="skill-category-title">DevOps &amp; Системы</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">Docker &amp; Docker-compose</li>
+              <li class="skill-tag priority">*nix / Linux / Ubuntu</li>
+              <li class="skill-tag priority">Bash скрипты</li>
+              <li class="skill-tag priority">Git (GitHub / Bitbucket)</li>
+              <li class="skill-tag">AWS (S3, EC2, RDS)</li>
+              <li class="skill-tag">CI/CD (GitHub Actions, GitLab)</li>
+              <li class="skill-tag">Nginx / PHP-FPM тюнинг</li>
+              <li class="skill-tag">PHPUnit &amp; Pest</li>
+            </ul>
+          </div>
+
+          <!-- Category 6: AI-инструменты & LLM Интеграции -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">🧠</div>
+              <h3 class="skill-category-title">AI-инструменты &amp; LLM Интеграции</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">LLM Integrations (APIs, RAG, Tool Use)</li>
+              <li class="skill-tag cert">Claude Anthropic (Сертификаты Anthropic)</li>
+              <li class="skill-tag priority">Prompt Engineering</li>
+              <li class="skill-tag">Google AntiGravity IDE</li>
+              <li class="skill-tag">ChatGPT / OpenAI API</li>
+              <li class="skill-tag">GitHub Copilot</li>
+            </ul>
+          </div>
+
+          <!-- Category 7: Frontend & UI -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">💻</div>
+              <h3 class="skill-category-title">Frontend &amp; Клиентские технологии</h3>
+            </div>
+            <ul class="skill-tags">
+              <li class="skill-tag priority">JavaScript (ES6+)</li>
+              <li class="skill-tag priority">Vue.js</li>
+              <li class="skill-tag priority">HTML5 &amp; CSS3</li>
+              <li class="skill-tag">jQuery</li>
+              <li class="skill-tag">Адаптивная верстка (Mobile-first)</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. Featured Projects
+         ========================================================================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Портфолио</div>
+          <h2 class="section-title" id="projects-title">Избранные инженерные проекты</h2>
+          <p class="section-desc">Реальные архитектурные кейсы, надежные сервисы и инструменты для разработчиков.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Campaign Automation Engine & AI Integration -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-badge">Event-Driven &amp; AI Integration</span>
+              <h3 class="project-title">Платформа автоматизации маркетинговых сценариев, триггеров и AI-ассистент</h3>
+              <p class="project-desc">
+                Event-driven система для гибкой настройки бизнес-поведения платформы под промо-кампании, удержание клиентов (retention) и динамическую сегментацию. Платформа в реальном времени реагирует на действия пользователей, рассылает персонализированные триггеры, управляет статусами и когортами. Интегрирован AI-ассистент в мобильном приложении для настройки триггеров на естественном языке.
+              </p>
+            </div>
+
+            <ul class="project-metrics-list">
+              <li><strong>Архитектура триггеров и очередей:</strong> Асинхронная обработка событий через RabbitMQ и Redis Streams с гарантией идемпотентности, исключением дубликатов и мгновенным исполнением триггерных цепочек.</li>
+              <li><strong>Интеграция с AI (LLM):</strong> Разработан бэкенд-модуль интеграции с нейросетевыми моделями для генерации, валидации и применения правил триггеров прямо из мобильного приложения.</li>
+              <li><strong>Retention &amp; когортные сценарии:</strong> Автоматизированы цепочки, такие как удержание клиентов, реактивация брошенных корзин, уведомления об акциях, динамическое перемещение пользователей между группами и многие другие.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span>PHP 8.2+</span>
+              <span>RabbitMQ</span>
+              <span>Redis Streams</span>
+              <span>LLM / AI Integration</span>
+              <span>WebSockets</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Database Schema Normalization & Query Optimization -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-badge">Database Optimization &amp; Architecture</span>
+              <h3 class="project-title">Архитектурный рефакторинг БД заказов и оптимизация SQL-производительности</h3>
+              <p class="project-desc">
+                Комплексный технический аудит и глубокий рефакторинг перегруженной таблицы заказов (<code class="inline-code">orders</code>, 77 колонок, антипаттерн «Божественная таблица»), устранение проблемы N+1 запросов в ORM и исправление критических ошибок схемы данных с защитой точности финансовых расчетов.
+              </p>
+            </div>
+
+            <ul class="project-metrics-list">
+              <li><strong>Ускорение в 26 раз (12 сек → 450 мс):</strong> Оптимизированы медленные выборки и генерация отчетов за счет составных B-Tree индексов, ликвидации N+1 запросов и переписывания тяжелых ORM-запросов на оптимизированный SQL.</li>
+              <li><strong>Ликвидация «ошибки в 1 цент»:</strong> Финансовые поля переведены с неточного <code class="inline-code">DOUBLE</code> на <code class="inline-code">DECIMAL(12,2)</code>, исключив накопление ошибок округления в биллинге и корзине.</li>
+              <li><strong>Нормализация 77-колоночной таблицы:</strong> Разработан аудит-план декомпозиции (вынос доставки, логистики, реквизитов и 12 дат), замена <code class="inline-code">LONGTEXT</code> (до 4 ГБ) на структурированный <code class="inline-code">JSON</code>/<code class="inline-code">VARCHAR</code>, добавление <code class="inline-code">UNIQUE</code> ограничений на публичные токены/хэши и замена 3-значных nullable булевых флагов на <code class="inline-code">NOT NULL DEFAULT 0</code>.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>PHP 8</span>
+              <span>EXPLAIN ANALYZE</span>
+              <span>Составные индексы</span>
+              <span>Redis</span>
+              <span>Database Refactoring</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. Work Experience / Timeline
+         ========================================================================= -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Карьера</div>
+          <h2 class="section-title" id="experience-title">Опыт работы и результаты</h2>
+          <p class="section-desc">Подтвержденные результаты в проектировании бэкенда и решении бизнес-задач.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Role 1: Efumo SSC - Digital Transformation -->
+          <div class="timeline-item">
+            <span class="timeline-marker current" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <img src="../assets/img/efumo.png" alt="Efumo SSC logo" class="timeline-company-logo" width="44" height="44" loading="lazy">
+                  <div class="timeline-title-content">
+                    <div class="timeline-heading-and-date">
+                      <h3 class="timeline-role">PHP Backend Developer</h3>
+                      <span class="timeline-date">Июль 2026 &mdash; Авг 2026 &middot; 2 мес</span>
+                    </div>
+                    <div class="timeline-company-row">
+                      <span class="timeline-company">Efumo SSC - Digital Transformation</span>
+                      <span class="timeline-location">&bull; Part-time</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Разработка и поддержка отказоустойчивых бэкенд-решений на <strong>PHP</strong> в проектах цифровой трансформации бизнеса (Digital Transformation).</li>
+                <li>Проектирование и интеграция RESTful API сервисов, оптимизация архитектуры взаимодействия и обработка внешних данных.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span>PHP</span>
+                <span>Backend Development</span>
+                <span>Digital Transformation</span>
+                <span>REST API</span>
+                <span>Git</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Role 2: WellnessLiving -->
+          <div class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <img src="../assets/img/wellnessliving.png" alt="WellnessLiving logo" class="timeline-company-logo" width="44" height="44" loading="lazy">
+                  <div class="timeline-title-content">
+                    <div class="timeline-heading-and-date">
+                      <h3 class="timeline-role">Senior PHP Backend Developer / Full Stack Engineer</h3>
+                      <span class="timeline-date">Май 2022 &mdash; Май 2026 &middot; 4 года 1 мес</span>
+                    </div>
+                    <div class="timeline-company-row">
+                      <span class="timeline-company">WellnessLiving</span>
+                      <span class="timeline-location">&bull; Full-time</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Проектирование и разработка масштабируемых микросервисов и ключевых подсистем глобальной SaaS-платформы на <strong>PHP</strong> и <strong>Java</strong>.</li>
+                <li>Спроектировал и внедрил событийно-ориентированный движок автоматизации маркетинговых триггерных кампаний (RabbitMQ, Redis, Webhooks) для удержания клиентов, реактивации и омниканальных уведомлений.</li>
+                <li>Провел глубокий архитектурный рефакторинг критической таблицы заказов и SQL-запросов (устранение N+1, составные B-Tree индексы, нормализация схемы), ускорив генерацию отчетов в 26 раз (12 с &rarr; 450 мс).</li>
+                <li>Обеспечение высокой надежности и доступности сервисов платформы (99.98%), код-ревью и менторинг коллег по команде.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span>Microservices</span>
+                <span>Java</span>
+                <span>PHP 8</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>Redis</span>
+                <span>RabbitMQ</span>
+                <span>Docker</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Role 3: Absolutist -->
+          <div class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <img src="../assets/img/absolutist.png" alt="Absolutist logo" class="timeline-company-logo" width="44" height="44" loading="lazy">
+                  <div class="timeline-title-content">
+                    <div class="timeline-heading-and-date">
+                      <h3 class="timeline-role">Web &amp; Backend Developer / Full Stack Engineer</h3>
+                      <span class="timeline-date">Май 2020 &mdash; Апр 2022 &middot; 2 года</span>
+                    </div>
+                    <div class="timeline-company-row">
+                      <span class="timeline-company">Absolutist</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Разработка серверной части и веб-инфраструктуры для игровых проектов компании (<strong>Gamedev and Back-end Operations</strong>).</li>
+                <li>Проектирование REST API для взаимодействия клиентских игровых приложений, синхронизации игрового прогресса и профилей игроков.</li>
+                <li>Оптимизация работы реляционной СУБД (MySQL) и кэширования для стабильной работы при пиковых нагрузках.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span>Gamedev</span>
+                <span>Back-end Operations</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Redis</span>
+                <span>REST API</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Role 4: Babenko eCommerce GmbH -->
+          <div class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <img src="../assets/img/babenko.png" alt="Babenko eCommerce GmbH logo" class="timeline-company-logo" width="44" height="44" loading="lazy">
+                  <div class="timeline-title-content">
+                    <div class="timeline-heading-and-date">
+                      <h3 class="timeline-role">PHP Backend Developer / Magento Backend Developer</h3>
+                      <span class="timeline-date">Май 2019 &mdash; Апр 2020 &middot; 1 год</span>
+                    </div>
+                    <div class="timeline-company-row">
+                      <span class="timeline-company">Babenko eCommerce GmbH</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Разработка программного обеспечения и кастомизация модулей интернет-магазинов на базе <strong>Magento</strong> и <strong>PHP</strong>.</li>
+                <li>Интеграция с внешними платежными шлюзами, службами доставки и складскими учетными системами.</li>
+                <li>Оптимизация производительности корзины, чекаута и каталога продукции для европейских e-commerce клиентов.</li>
+              </ul>
+              <div class="timeline-stack">
+                <span>Разработка ПО</span>
+                <span>PHP</span>
+                <span>Magento</span>
+                <span>MySQL</span>
+                <span>E-Commerce</span>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. Education Section
+         ========================================================================= -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Образование</div>
+          <h2 class="section-title" id="education-title">Высшее профильное образование</h2>
+          <p class="section-desc">Академическая фундаментальная база в области информационных технологий и компьютерных наук.</p>
+        </div>
+
+        <div class="education-wrapper">
+          <article class="education-card">
+            <div class="education-header">
+              <div>
+                <h3 class="education-institution">Национальный Горный Университет</h3>
+                <div class="education-degree">
+                  <strong>Специальность:</strong> Информационные технологии &bull; Инженер-программист
+                </div>
+              </div>
+              <span class="education-period">2007 &mdash; 2012 гг.</span>
+            </div>
+
+            <p style="color: var(--text-muted); font-size: 0.96rem; line-height: 1.6; margin-bottom: 0;">
+              Полный пятилетний курс обучения. Углубленная подготовка по теории алгоритмов и структурам данных, проектированию архитектуры ПО, реляционным базам данных и системному программированию.
+            </p>
+
+            <div class="education-badges">
+              <span class="edu-badge diploma">
+                <span aria-hidden="true">🎓</span> Квалификация: Специалист в области компьютерных наук
+              </span>
+              <span class="edu-badge diploma">
+                <span aria-hidden="true">🌐</span> Диплом международного образца
+              </span>
+              <span class="edu-badge">
+                Computer Science &amp; Software Engineering
+              </span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. Contacts & Footer Section
+         ========================================================================= -->
+    <section class="section" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+
+        <div class="contacts-wrapper">
+          <div class="contacts-grid">
+
+            <div class="contacts-lead">
+              <div class="section-tag">Контакты</div>
+              <h3 id="contacts-title">Готовы создать надежный бэкенд вместе?</h3>
+              <p>
+                Я открыт к предложениям на позицию Senior PHP / Backend Engineer (Full-time или B2B контракт). Если у вас есть задачи по масштабированию или вы хотите обсудить сотрудничество — пишите.
+              </p>
+
+              <div class="availability-box">
+                <span class="availability-icon">🌍</span>
+                <span class="availability-text">
+                  <strong>Статус:</strong> Открыт к Remote (Мир / CET / UTC+2) и релокации &bull; <strong>Английский:</strong> B1 (Intermediate)
+                </span>
+              </div>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="contacts-links">
+
+              <a href="mailto:aleks.kash.php@gmail.com" class="contact-card" id="contact-email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <div class="contact-info">
+                  <span class="contact-label">Электронная почта</span>
+                  <span class="contact-value">aleks.kash.php@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://t.me/aleks_kash" class="contact-card" id="contact-telegram" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832.946z"/></svg>
+                <div class="contact-info">
+                  <span class="contact-label">Telegram</span>
+                  <span class="contact-value">@dev_unit</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/a-kashtanov" class="contact-card" id="contact-linkedin" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+                <div class="contact-info">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">linkedin.com/in/a-kashtanov</span>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       8. Minimal Footer
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        &copy; 2026 Алексей Каштанов. Все права защищены. Создано на семантическом HTML5 и CSS3. Хостинг на GitHub Pages.
+      </div>
+      <a href="#hero" class="footer-back-to-top" aria-label="Вернуться наверх">
+        <span>Наверх</span>
+        <span aria-hidden="true">&uarr;</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
